@@ -7,7 +7,33 @@
 </head>
 
 <body>
-	 <table>
+	 table {
+      border-collapse: separate;
+      border-spacing: 8px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+      background: #fff;
+    }
+
+    /* सिर्फ even rows color होंगी, बाकी default white */
+    tbody tr:nth-child(even) td {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table>
     <thead>
       <tr>
         <th>Table-Header 1</th>
